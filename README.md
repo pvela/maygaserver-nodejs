@@ -21,16 +21,21 @@ for NPM based install
 
 	var maygaserver = require('maygaserver');
 
+Then initialize the library
+
 	maygaserver.initialize(credentials, options);
 
-(required) credentials :
-        (required) clientId from mayga.me
-        (required) clientSecret from mayga.me
+The parameters to the initialize call are :
 
-(optional) options :
-	(optional) debugOn = true / false
-        (optional) server = restify or express server object
-        (optional) endpoint = endpoint url to expose this api default : /integration/mayga/getToken/:userEmail
+	(required) credentials :
+        	(required) clientId from mayga.me
+        	(required) clientSecret from mayga.me
+
+	(optional) options :
+		(optional) debugOn = true / false
+        	(optional) server = restify or express server object
+        	(optional) endpoint = endpoint url to expose this api default : /integration/mayga/getToken/:userEmail
+
 
 List of API's supported by the library.
 =======================================
@@ -51,6 +56,7 @@ List of API's supported by the library.
 ###Example :
 
 	maygaserver.initialize({clientId:"abcdeg",clientSecret:"qwerty"},{debugOn:true});
+
 	maygaserver.addNewAppUser("welcometomayga@mayga.me",function(err,user) {
         	console.dir(user);
         	mayga.getUserToken("welcometomayga@mayga.me",function(err,token) {
