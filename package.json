@@ -1,0 +1,14 @@
+{
+    "name": "maygaserver",
+    "author": "Prabhu Velayutham",
+    "version": "0.0.3",
+    "main": "lib/maygaserver",
+    "keywords": ["messaging", "mayga"],
+    "homepage": "http://mayga.me",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/pvela/maygaserver-nodejs.git"
+    },
+    "description": "A nodejs wrapper for mayga messaging API to enable in app messaging",
+    "contributors": ["pvela"]
+}
