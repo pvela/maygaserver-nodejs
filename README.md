@@ -15,13 +15,13 @@ Usage :
 =======
 if installed by downloading the file
 
-var maygaserver = require('./lib/maygaserver');
+	var maygaserver = require('./lib/maygaserver');
 
 for NPM based install
 
-var maygaserver = require('maygaserver');
+	var maygaserver = require('maygaserver');
 
-maygaserver.initialize(credentials, options);
+	maygaserver.initialize(credentials, options);
 
 (required) credentials :
         (required) clientId from mayga.me
@@ -50,12 +50,11 @@ List of API's supported by the library.
 
 ###Example :
 
-maygaserver.initialize({clientId:"abcdeg",clientSecret:"qwerty"},{debugOn:true});
-
-maygaserver.addNewAppUser("welcometomayga@mayga.me",function(err,user) {
-        console.dir(user);
-        mayga.getUserToken("welcometomayga@mayga.me",function(err,token) {
-                console.dir(token);
-        });
-});
+	maygaserver.initialize({clientId:"abcdeg",clientSecret:"qwerty"},{debugOn:true});
+	maygaserver.addNewAppUser("welcometomayga@mayga.me",function(err,user) {
+        	console.dir(user);
+        	mayga.getUserToken("welcometomayga@mayga.me",function(err,token) {
+                	console.dir(token);
+        	});
+	});
 
