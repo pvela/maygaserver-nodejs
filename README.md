@@ -59,7 +59,7 @@ List of API's supported by the library.
 
 	maygaserver.addNewAppUser("welcometomayga@mayga.me",function(err,user) {
         	console.dir(user);
-        	mayga.getUserToken("welcometomayga@mayga.me",function(err,token) {
+        	maygaserver.getUserToken("welcometomayga@mayga.me",function(err,token) {
                 	console.dir(token);
         	});
 	});
